@@ -1,0 +1,1588 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h3, h4, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Force scrollbar */
+html { overflow-y: scroll; }
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] { vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em { font-style: italic; }
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup { top: -.7em; }
+
+sub { bottom: -.25em; }
+
+/* 1.2. Clear Fix
+   ========================================================================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after { clear: both; }
+
+.cf { *zoom: 1; }
+
+.futura-bold-font {
+  font-family: 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* Global styling start here */
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+  font-family:'Futura Bold', sans-serif;
+}
+
+ul,li {list-style: none;}
+a {text-decoration: none;}
+body {font-family: 'Poppins', sans-serif;}
+
+img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+h2 {
+  color: #fff;
+  font-size: 43px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+h3 {
+  color: #252525;
+  font-size: 39px;
+  font-weight: 900;
+}
+
+h4 {
+  color: #252525;
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 35px;
+}
+
+h5 {
+  color:#252525;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+p { color:#8f928f; }
+
+.wrapper { 
+  max-width: 1360px;
+  width:87.1%;
+  margin: 0 auto;
+}
+
+input { outline: none; }
+textarea { 
+  outline: none;
+  resize: none;
+}
+
+/* Global styling end-here */
+
+/*********************** common classes styling  start  Here****************/
+.contact-time-icon::before{
+  margin-right: 8px;
+  color: #fff;
+  font-family: "FontAwesome";
+}
+
+.icon-style { display: block; }
+
+.icon-style::before {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color:#fff;
+  font-family:FontAwesome;
+  font-size:16px;
+  text-indent: 0;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.slider-btn-style::before{
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color:#fff;
+  font-family:FontAwesome;
+  font-size:28px;
+  text-indent: 0;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.icon-styling::before {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color:#000;
+  font-family:FontAwesome;
+  font-size:16px;
+  text-indent: 0;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.slider-btn-style { 
+  border-radius: 50%;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+/***********************common classes styling end here********************/
+
+/* active classes start here */
+.navbar-list.active a {  color:#a4c63a; }
+
+.navbar-list.active a::after {
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  content: "";
+  background-color: #a4c63a;
+}
+/* active-classes end here */
+
+/* Hamburger menu start here */
+.hamburger {
+  display:none;
+  cursor: pointer;
+}
+ 
+.line {
+  width: 30px;
+  height: 2px;
+  display: block;
+  position: relative;
+  text-indent: -9999px;
+  background-color: #fff;
+}
+ 
+.line::after,
+.line::before {
+  width: 30px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  content: "";
+  background-color: #fff;
+}
+ 
+.line::before { bottom:-10px; }
+/* hamburger menu ends here */
+
+/* ==========================================================================
+   1. HEADER START HERE
+   ========================================================================== */
+.header-top .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contact-time-icon {
+  padding: 12px 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600; 
+  -webkit-transition: all .5s ease-in-out; 
+  -o-transition: all .5s ease-in-out; 
+  transition: all .5s ease-in-out;
+}
+
+.contact-time-icon:first-child {
+  border-left: 1px solid #bbd571;
+  border-right: 1px solid #bbd571;
+}
+
+.time::before {
+  content: "\f017"; 
+  -webkit-transition: all .5s ease-in-out; 
+  -o-transition: all .5s ease-in-out; 
+  transition: all .5s ease-in-out;
+}
+
+.phone::before { 
+  content: "\f095"; 
+  -webkit-transition: all .5s ease-in-out; 
+  -o-transition: all .5s ease-in-out; 
+  transition: all .5s ease-in-out;
+}
+
+.social-media-list a {
+  width: 47px;
+  height:47px;
+  display: block;
+  text-indent: -9999px;
+}
+
+.header-bottom .wrapper { 
+  width: 84.4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+h1 a {
+  color: #fff;
+  font-size:25px;
+  font-weight: 800;
+  text-transform:uppercase;
+}
+
+.navbar-list a {
+  padding: 0 8px;
+  position: relative;
+  color:#fff;
+  font-size: 16px;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.header-top { background-color: #a4c63a;}
+.facebook::before { content: "\f39e"; }
+.twitter::before { content: "\f099"; }
+.linkdin::before { content: "\f0e1"; }
+.behance::before { content: "\f1b4"; }
+.social-media-list { border-left: 1px solid #bbd571;}
+.social-media-list:last-child { border-right: 1px solid #bbd571;}
+.navbar-list:not(:last-child) { margin-right: 36px;}
+.contact-time-icon:last-child { border-right: 1px solid #bbd571; }
+
+.navbar { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+}
+
+.socail-media { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+}
+
+.header-bottom {
+  padding: 36px 0;
+  position: absolute;
+  width: 100%; 
+  z-index: 2;
+}
+
+/* ==========================================================================
+   1. HEADER END HERE
+   ========================================================================== */
+/**********JS of slider start here************/
+.slider-lists {
+  position: relative;
+  min-height: 667px;
+  overflow:hidden;
+}
+
+.slider-list {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: all .5s ease-in-out;
+}
+
+.banner-slider .wrapper { width: 100%; }
+/**********JS of slider start here************/
+/* ==========================================================================
+   2. MAIN STYLING START HERE
+========================================================================== */
+/* ==========================================================================
+   2.1. BANNER START  HERE
+   ========================================================================== */
+.slider-figure {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+   
+.banner-content {
+  width: 45%;
+  padding-top: 150px;
+  margin: 0px 11.5%;
+}
+
+.small-banner-heading {
+  margin-bottom: 25px;
+  display: block;
+  color:#a4c63a;
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.banner-content p {
+  margin-bottom: 45px;
+  color: #fff;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.contact-us {
+  padding: 13px 29px;
+  border-radius: 30px;
+  display:inline-block;
+  background-color: #a4c63a;
+  color:#fff;
+  font-size: 14px;
+  font-weight: 900;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.slider-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 51%;
+  left: 0;
+  width:100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.slider-btns a {
+  text-indent: -9999px;
+  width: 46px;
+  height: 46px;
+}
+
+.previous { margin-left: 1.2%; }
+.next { margin-right: 1%; }
+.previous::before { content: "\f104"; }
+.next::before {content: "\f105"; }
+.banner-slider { position:relative; }
+h2 { margin-bottom: 29px; }
+/* ==========================================================================
+   2.1 BANNER SLIDER END HERE
+========================================================================== */
+/* ==========================================================================
+   2.2 CONTACT US SECTION STYLING START HERE
+========================================================================== */
+.contact {
+  padding:39px 0; 
+  background-color: #a4c63a; 
+}
+
+.contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.call-back-request {
+  display: block;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.call-now { flex-basis: 60%; }
+.contact-us-btn { flex-basis: 15%; }
+
+.call-now p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.contact-us-btn .contact-us { border:2px solid #fff; }
+/* ==========================================================================
+   2.2 CONTACT US SECTION STYLING END HERE
+========================================================================== */
+/* ==========================================================================
+   2.3 FINANCIAL SERVICES STYLING START HERE
+========================================================================== */
+.financial-services { padding: 146px 0 112px; }
+.financial-services h3 { text-align: center; }
+.service-list:not(:nth-child(3n)) { margin-right: 2.7%; }
+
+.color-heading {
+  color: #a4c63a;
+  font-size: 38px;
+  margin-left: 5px;
+}
+
+.colorless-small-heading {
+  display: block;
+  color: #938c80;
+  text-align: center;
+  margin: 27px 0;
+}
+
+.services {
+  margin-top: 61px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.service-content {
+  padding: 25px 30px;
+  background-color: #f7f7f7;
+}
+
+.service-content p {
+  margin: 23px 0 ;
+  font-size: 16px;
+  line-height:30px;
+}
+
+.service-list {
+  -ms-flex-preferred-size: 31.5%;
+  flex-basis: 31.5%;
+  margin-bottom: 35px;
+}
+
+.read-more-btn {
+  padding:14px 25px;
+  border-radius: 30px;
+  border: 1px solid #a4c63a;
+  display: inline-block;
+  color: #fff;
+  background-color: #a4c63a;
+  font-size: 14px;
+  font-weight: 900;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+/* ==========================================================================
+   2.3 FINANCIAL SERVICES STYLING END HERE
+========================================================================== */
+/* ==========================================================================
+   2.4 BUSINESS GROWTH SECTION STYLING START HERE
+========================================================================== */
+.business-growth { padding: 129px 0 138px; }
+.business-growth-content .read-more-btn { border: none; }
+.business-growth-content h3 { color: #fff; }
+.business-growth-content .color-heading { display: block; }
+.paragraph-top { margin: 43px 0 ; }
+.paragraph-bottom { margin-bottom: 43px; }
+.growth-count-list span { display: block; }
+.growth-count-list:not(:nth-child(2n)) { margin-right: 5.5%;}
+
+.business-growth .wrapper { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+}
+
+.business-growth {
+   background: url("../img/fun-facts-bg.jpg") no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.business-growth .colorless-small-heading {
+   text-align: left;
+   color: #fff;
+}
+
+.business-growth-content { 
+  margin-right: 8.2%;
+  -ms-flex-preferred-size: 45%;
+  flex-basis: 45%; 
+}
+
+.business-growth-content p { 
+   color: #fff;
+   line-height: 30px; 
+}
+
+.growth-counts {
+  margin-top:80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+}
+
+.growth-count-list {
+  padding: 45px 0;
+  margin-bottom: 32px;
+  background-color:rgba(58,58,58,0.6);
+  -ms-flex-preferred-size: 47.2%;
+  flex-basis: 47.2%;
+}
+
+.no {
+   margin-bottom: 20px;
+   color: #a4c63a;
+   font-size: 35px;
+   font-weight: 900; 
+   text-align: center;
+}
+
+.count-text {
+   color: #fff;
+   font-size: 20px;
+   font-weight: 900;
+   text-align: center;
+}
+/* ==========================================================================
+   2.4 BUSINESS GROWTH SECTION STYLING END HERE
+========================================================================== */
+ /* ==========================================================================
+   2.5  ABOUT COMPANY SECTION START HERE
+========================================================================== */
+.about-company { padding: 150px 0; }
+.our-company-figure img { height: 100%; }
+.about-company-details p { line-height: 30px; }
+
+.about-company .wrapper { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+}
+
+.about-company-details .colorless-small-heading { 
+   margin-bottom: 15px;
+   text-align: left; 
+}
+
+.about-company-details {
+  padding: 25px 5.2%;
+  background-color: #f7f7f7;
+  -ms-flex-preferred-size: 53.5%;
+  flex-basis: 53.5%;
+}
+/* ==========================================================================
+   2.5 ABOUT COMPANY SECTION END HERE
+========================================================================== */ 
+/* ==========================================================================
+   2.6 ABOUT US SECTION STYLING START HERE
+========================================================================== */ 
+.about-us { background-color: #f7f7f7; padding: 150px 0; }
+.about-us h3 { text-align: center; }
+.client-details p { line-height: 25px; }
+.client-details:not(:nth-child(2n)) { margin-right: 3.2%; }
+
+.client-list { 
+  -ms-flex-preferred-size: 50%; 
+  flex-basis: 50%;
+}
+
+.clients {
+  margin-top: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -ms-flex-wrap:wrap; 
+  flex-wrap:wrap;
+}
+
+.client-details {
+   padding: 30px 62px;
+   background-color: #fff;
+   text-align: center;
+}
+
+.client-profession {
+   display: block;
+   margin: 8px 0;
+   color: #a4c63a;
+   font-size: 15px;
+   font-weight: 600;
+}
+
+.client-list figure {
+   width: 11.2%;
+   margin: 20px auto;
+}
+
+.client-list figure img {
+   width: 100%;
+   border-radius: 50%;
+}
+/* ==========================================================================
+   2.6 ABOUT US SECTION STYLING END HERE
+========================================================================== */ 
+/* ==========================================================================
+   2.7 CALL BACK  SECTION STYLING START HERE
+========================================================================== */ 
+.call-back { padding: 155px 0 145px; }
+.call-back h3 { text-align: center; }
+.thirty-percent:not(:nth-child(3n)) { margin-right: 2.9%; }
+
+.call-back-form {
+   padding: 62px;
+   margin-top: 90px;
+   background-color: #a4c63a;
+}
+
+.thirty-percent {
+   width: 31.1%;
+   margin-bottom: 37px;
+   display: inline-block;
+}
+
+.thirty-percent input {
+   width: 100%;
+   padding: 15px;
+   border-radius: 30px;
+   border: none;
+   outline: none;
+}
+
+.text-area { 
+   width: 100%;
+   margin-bottom: 37px;
+}
+
+textarea {
+   width: 100%; 
+   border-radius: 30px;
+   padding: 20px;
+   border: none;
+   outline: none;
+}
+
+.send-btn input {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border:1px solid #fff;
+  color: #fff;
+  background-color: #a4c63a;
+  font-weight: 900;
+  outline: none;
+  text-transform: uppercase;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.send-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+/* ==========================================================================
+   2.7 CALL BACK SECTION STYLING END HERE
+========================================================================== */ 
+
+/* ==========================================================================
+   2.8 COMPANY CLIENTS SECTION STYLING START HERE
+========================================================================== */ 
+.company-clients .wrapper { width: 79%; }
+.clients-list { margin-bottom: 30px;}
+
+.clients-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.company-clients {
+   background-color: #f7f7f7;
+   padding: 58px 0;
+}
+/* ==========================================================================
+   2.7  COMPANY CLIENTS SECTION STYLING END HERE
+========================================================================== */ 
+/*
+==========================================================================
+   3. FOOTER START HERE
+========================================================================== */ 
+footer { background-color: #232323; }
+.footer-top { padding: 87px 0 84px; }
+.social-link-list:not(:last-child){ margin-right: 3%; }
+.Send-message-btn { display: inline-block; }
+
+.company-detail { 
+  -ms-flex-preferred-size: 23%; 
+  flex-basis: 23%;
+}
+
+.footer-contact-us { 
+  -ms-flex-preferred-size: 22.8%; 
+  flex-basis: 22.8%; 
+}
+
+.useful-links,
+.additional-pages { 
+  -ms-flex-preferred-size: 22%; 
+  flex-basis: 22%; 
+}
+
+.socail-links { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+  margin-top: 28px; 
+}
+
+
+.footer-top .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer-top h5 {
+  margin-bottom:30px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.social-link-list a {
+  width: 37px;
+  height: 37px;
+  display: block;
+  border-radius: 50%;
+  background-color: #fff;
+  text-indent: -9999px;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.company-detail p {
+  font-size: 15px;
+  color: #fff;
+  line-height: 30px;
+}
+
+.link-list a {
+  color: #fff;
+  font-size: 15px;
+  line-height: 38px; 
+  -webkit-transition: all .5s ease-in-out; 
+  -o-transition: all .5s ease-in-out; 
+  transition: all .5s ease-in-out;
+}
+
+.footer-form-email,
+.footer-form-name,
+.footer-text-area { 
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.footer-form-email input,
+.footer-form-name input {
+  width: 100%;
+  padding: 12px;
+  display: block;
+  border-radius: 25px;
+  border: none;
+  background-color: #343434;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+}
+
+.footer-text-area textarea {
+   border-radius: 20px;
+   background-color:#343434;
+   color: #fff;
+}
+
+.Send-message-btn input {
+  padding: 13px 27px;
+  border: none;
+  border-radius: 25px;
+  background-color:#a4c63a;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 900;
+  outline: none;
+  text-transform: uppercase;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.footer-bottom .wrapper p {
+  color: #fff;
+  text-align: center;
+}
+
+.footer-bottom {
+  padding: 35px 0;
+  background-color: #343434;
+}
+
+.footer-bottom-link {
+  color: #fff;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+/* ==========================================================================
+   3. FOOTER END HERE
+========================================================================== */ 
+ /* ==========================================================================
+   5. MEDIA QUERY START HERE
+========================================================================== */ 
+
+/*********hover media query start**********/
+@media screen and (min-width:995px) {
+ 
+  .navbar-list:not(:first-child) a::after {
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom:-10px;
+    content: "";
+    background-color: #a4c63a;
+    -webkit-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+  }
+    
+  .navbar-list:not(:first-child) a:hover {  color: #a4c63a; }
+  .navbar-list a:hover::after { width: 100%;}
+  .time:hover::before,
+  .time:hover,
+  .phone:hover,
+  .phone:hover::before { color: #232323; }
+  .icon-style:hover::before { color: #232323; }
+  .icon-styling:hover::before { color: #fff; }
+  .social-link-list a:hover { background-color: #a4c63a; }
+  .link-list a:hover { color:#bbd571; }
+  .footer-bottom-link:hover { color: #a4c63a; }
+  .slider-btn-style:hover { background-color:#fff; }
+  .slider-btn-style:hover::before { color: #232323; }
+
+  .contact-us:hover { 
+    color: #a4c63a;
+    background-color: #fff;
+  }
+
+  .read-more-btn:hover {
+    background-color: #fff;
+    color: #a4c63a;
+    border-color: #a4c63a;
+  }
+
+  .send-btn input:hover,
+  .Send-message-btn input:hover {
+    background-color: #fff;
+    color: #a4c63a;
+  }
+}
+
+/*********hover media query End**********/
+/************1280px media query start here*************/
+@media screen and (max-width:1280px) {
+  .wrapper { width: 90%; }
+  .banner-content { width: 61%; }
+  .thirty-percent { width: 31%; }
+  .clients-list:not(:last-child) { margin-right: 6%; }
+  .client-details { padding: 30px 26px; }
+  .call-now { flex-basis: 55%; }
+  .contact-us-btn { flex-basis:20%; }
+}
+/****************1280 media Query end here************/
+
+/* ****************1024px media query start here************/
+@media screen and (max-width:1024px) {
+  h2 { font-size: 41px; }
+  .slider-figure { top:-23.8%; }
+  .financial-services { padding: 100px 0; }
+  .growth-counts { margin-top: 100px; }
+  .business-growth { padding: 100px 0;}
+  .about-company { padding: 100px 0; }
+  .about-us { padding: 120px 0; }
+  .client-list figure { width: 15.2%; }
+
+  .banner-content {
+    width: 70%;
+    padding: 52px 0 130px;
+  }
+  .about-company-details {
+    padding: 25px 3.2%;
+    -ms-flex-preferred-size: 70.5%;
+    flex-basis: 70.5%;
+  }
+}
+/* ****************1024px media query end here**************/
+
+/****************995px media query start here**************/
+@media screen and (max-width:995px) {
+
+/************Hamburger style for js Start here ***************/
+
+  nav { display: none; }
+  .hamburger { 
+    display: block;
+    height: 30px; 
+  }
+
+  .hamburger.hover {
+    position: fixed;
+    margin-left: 85%;
+    z-index: 20;
+  }
+
+  .line.hover {
+    top: -20%;
+    background-color: transparent;
+    z-index: 20;
+  }
+   
+  .line.hover::after {
+    bottom: -5px;
+    animation: move-right 1s forwards;
+    z-index: 20;
+  }
+
+  @keyframes move-right {
+    5% { transform: rotate(-15deg) }
+    100% { transform: rotate(-45deg) }
+  }
+
+  .line.hover::before {
+    bottom: -5px;
+    animation: move-left 1s forwards;
+    z-index: 20;
+  }
+
+  @keyframes move-left {
+    5% { transform: rotate(15deg) }
+    100% { transform: rotate(45deg) }
+  }
+   
+  .line::after { bottom:-10px;}
+  .line::before { bottom: 10px;}
+/************Hamburger style for js End here ***************/ 
+  nav.hover{ 
+    width: 100vw;
+    height: 100vh;
+    position: absolute; 
+    display: block;
+    top:-80%;
+    right: 0; 
+    z-index: 5;
+  }
+    
+  .navbar.hover { 
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: black;
+    transition: all .5s ease-in-out;
+  }
+  
+
+
+  .navbar-list {
+    margin: 20px 30px;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  
+  .banner-content {
+    width: 85%;
+    padding: 52px 0 120px;
+  }
+
+  .banner-content p {
+    margin-bottom: 35px;
+    font-size: 16px; 
+  }
+
+
+  .header-bottom .wrapper {  width: 90%;}
+  h2 { font-size: 35px; }
+  .slider-figure { top: -26.8%; }
+  .service-list:not(:nth-child(3n)) { margin-right: 0; }
+  .service-list figure img { height: 100%; }
+  .growth-count-list:not(:nth-child(2n)) { margin-right: 0%;}
+  .growth-counts { margin-top: 50px; }
+  h3,
+  .color-heading { font-size: 35px; }
+  .business-growth { padding: 70px 0; }
+  .paragraph-top { margin: 20px 0; }
+  .thirty-percent:not(:nth-child(3n)) { margin-right: 1.9%;}
+  .thirty-percent  { margin-bottom: 25px; }
+  .about-us { padding: 80px 0; }
+  .call-back { padding: 100px 0; }
+  .text-area { margin-bottom:25px; }
+  .clients-list:not(:last-child) { margin: 0; }
+  .clients-list:nth-child(n){ margin:0 6% 20px 0 }
+  .footer-top .wrapper div:not(:nth-child(n+3)) { margin-right: 5%; }
+  
+  .footer-contact-us { 
+    -ms-flex-preferred-size: 45%; 
+    flex-basis: 45%; 
+  }
+
+  .call-now { flex-basis: 60%; }
+  .contact-us-btn { flex-basis:23%; }
+
+  .service-list { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex; 
+  }
+
+  .services { 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+    -ms-flex-direction: column; 
+    flex-direction: column; 
+  }
+
+  .service-content { 
+    -ms-flex-preferred-size: 60%; 
+    flex-basis: 60%; 
+  }
+
+  .business-growth .wrapper { 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+    -ms-flex-direction: column; 
+    flex-direction: column; 
+  }
+
+
+  .growth-count-list {
+    -ms-flex-preferred-size: 35%;
+    flex-basis: 35%;
+    margin: 0 auto 32px;
+  }
+  
+  .about-company .wrapper {
+    width: 70%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .our-company-figure img {
+    max-height:420px;
+    height: 100%;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .clients {
+    width: 65%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .client-list figure {
+    width: 11.2%;
+    margin: 30px auto;
+  }
+
+  .call-back-form {
+      padding: 40px;
+      margin-top: 35px;
+  }
+
+  .footer-top .wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left; 
+  }
+
+  .company-detail,
+  .useful-links,
+  .additional-pages {
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
+    margin-bottom: 30px;
+  }
+}
+  /****************995px media query end here**************/
+  /* **********768px media query started here************** */
+@media screen and (max-width:768px) {
+  .header-top .wrapper { width: 95%; }
+  h1 { font-size: 23px; }
+  .contact-time-icon:first-child ,
+  .contact-time-icon:last-child { border: none; }
+  .header-bottom { padding: 20px 0; }
+
+  h2 { 
+    font-size: 30px; 
+    margin-bottom: 10px; 
+  }
+
+  .social-media-list a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-bottom .wrapper { 
+    -webkit-box-align: baseline; 
+    -ms-flex-align: baseline; 
+    align-items: baseline; 
+  }
+
+  .contact-time-icon{
+    padding: 5px 20px;
+    display: block; 
+  }
+
+  .contact-time {
+    border-color: #bbd571;
+    border-style: solid;
+    border-width: 0 1px;
+  }
+
+  .small-banner-heading {
+    margin-bottom: 10px;
+    font-size: 20px; 
+  }
+
+  .banner-content {
+    width: 90%;
+    padding: 30px 0 68px;
+  }
+
+  .contact-us {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .slider-figure img { max-height: 500px; }
+  .slider-figure { top: -24%; }
+  .banner-content p { line-height: 26px; }
+  .contact { padding:15px 0; }
+  .call-now { margin-bottom: 10px; }
+  .call-back-request{ font-size: 18px; }
+  .call-now p { font-size: 15px; }
+  .services { margin-top: 30px; }   
+  .about-company .wrapper { width: 80%; }
+  .our-company-figure img { max-height: 330px; }
+  .business-growth-content p,
+  .about-company-details p { line-height: 25px; }
+  .business-growth { padding: 30px 0; }
+  .financial-services { padding: 60px 0; }
+  .about-company { padding: 60px 0; }
+  .call-back { padding: 60px 0; }
+  .footer-top .wrapper div:not(:nth-child(n+3)) { margin-right: 0; }
+  .footer-top .wrapper div:nth-child(2n+1) { margin-right: 8%; }
+  
+  .service-content { 
+    padding: 20px; 
+    -ms-flex-preferred-size: 80%; 
+    flex-basis: 80%; 
+  }
+
+  .company-detail,
+  .useful-links, 
+  .additional-pages { 
+    -ms-flex-preferred-size: 45%;
+    flex-basis: 45%;
+  }
+
+  .contact .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .service-content p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  h3,
+  .color-heading { font-size: 28px; }
+
+  .read-more-btn {
+    font-size: 13px;
+    padding: 13px;
+  }
+
+  .client-list figure {
+    width: 15%;
+    margin: 30px auto;
+  }
+}
+  /* **********768px media query End here************** */
+
+  /*************540p media query start here**************/
+  @media screen and (max-width:540px) {
+  .service-list {
+    display: block;
+    width: 70%;
+    margin: 0 auto 25px;
+  }
+
+  .hamburger:hover ~ nav { top: 22%; }
+  .no { font-size: 26px; }
+  .count-text { font-size: 17px; }
+  .service-list:not(:nth-child(3n)) { margin-right: auto; }
+  .growth-count-list { padding: 20px 0; }
+  .our-company-figure img { max-height: 280px; }
+  .clients { width: 85%; }
+  .about-us { padding: 30px 0; }
+  .thirty-percent { width: 100%; }
+  
+  .clients-images { 
+    -webkit-box-pack: center;
+    -ms-flex-pack: center; 
+    justify-content: center; 
+  }
+  }
+  /*************540p media query End here**************/
+
+  /*************480p media query start here**************/
+@media screen and (max-width:480px) {
+  .header-top .wrapper { 
+    width: 100%; 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+    -ms-flex-direction: column; 
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .slider-figure { top: -25%; }
+  h1 a { font-size: 20px; }
+  .social-media-list:last-child { border: none; }
+  .line { width: 20px;}
+  .social-media-list { border: none; }
+  .contact .wrapper { width: 95%; }
+  h3,
+  .color-heading { font-size: 22px; }
+
+  .contact-time { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    border-width: 1px 0; 
+  }
+
+  .line::after,
+  .line::before {
+    width: 20px;
+    bottom: -14px;
+  }
+  
+  .line::before { bottom:-7px; }
+  .banner-slider .wrapper { width: 100%; }
+  h2 { font-size:22px; }
+  .small-banner-heading { font-size: 17px; }
+
+  .banner-content p { 
+    font-size: 15px;
+    line-height: 20px; 
+  }
+
+  .banner-content { 
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px 0 40px;
+    text-align: center;
+  }   
+
+  .colorless-small-heading {
+    margin: 10px 0;
+    font-size: 13px; 
+  }
+
+  .social-media-list a {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .footer-top h5 {
+    font-size: 20px;
+    margin-bottom: 10px; 
+  }
+
+  .social-link-list a {
+    width: 30px;
+    height: 30px;
+  }
+
+  .company-clients { padding: 35px 0; }
+  .company-detail p { line-height: 25px; }
+  .link-list a { line-height: 32px; }
+  .footer-bottom .wrapper p { font-size: 15px; }
+  .service-content p { margin: 15px 0; }
+  .financial-services { padding: 50px 0; }
+  .business-growth-content { margin-right: 0; }
+  .contact-time-icon { padding: 0 8px; font-size: 12px; }
+  .service-list { width: 85%; }
+  .about-company-details p { font-size: 13px; }
+  .client-details p { font-size: 15px; }
+  .client-list figure { width: 19%; }
+  .call-back-form { padding: 20px; }
+  .Send-message-btn input { padding: 13px 15px; }
+  .footer-top { padding: 50px 10px; }
+  
+  .company-detail, .useful-links, .additional-pages {
+    -ms-flex-preferred-size: 78%;
+    flex-basis: 78%; 
+  }
+  
+  .growth-count-list { 
+    -ms-flex-preferred-size: 45%;
+    flex-basis: 45%; 
+  }
+
+  .footer-contact-us {
+    -ms-flex-preferred-size: 65%; 
+    flex-basis: 65%; 
+  }
+}
+/*480p media query end here****************************/
+/*****************320px media query start here***********/
+@media screen and (max-width:320px) {
+  .banner-content { 
+    width: 80%;
+    padding: 10px 0; 
+  }
+
+  .small-banner-heading { font-size: 13px; }
+  .icon-style::before { font-size: 14px; }
+  .slider-figure { top: -25%; }
+  .header-bottom { padding: 0;}
+
+  h2 {
+    font-size: 20px;
+    letter-spacing: 0;
+  }
+
+  .banner-content p {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .contact-us {
+    padding: 9px;
+    font-size: 12px;
+  }
+
+  .call-back-request {
+    font-size: 16px; 
+    margin-bottom: 5px;
+  }
+
+  .slider-figure img { max-height: 310px; }
+  .service-content { padding: 10px; }
+  h4 { font-size: 18px; }
+  .read-more-btn { padding: 8px; }
+
+  .business-growth-content p,
+  .about-company-details p {
+    line-height: 20px;
+    font-size: 13px;
+  }
+
+  .hamburger:hover ~ nav { top: 15%; }
+
+  .paragraph-bottom { margin-bottom: 16px;}
+  .growth-counts { margin-top: 18px; }
+  .growth-count-list { margin: 0 auto 18px; }
+  .about-company { padding: 30px 0; }
+
+  .no {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .paragraph-top { margin: 8px 0; }
+  .client-list figure { width: 28%; }
+  .client-details:not(:nth-child(2n)) { margin-right: 0; }
+  .clients { width: 95%; }
+  .footer-top .wrapper { width: 95%; }
+
+  .company-detail,
+  .useful-links, 
+  .additional-pages { 
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; 
+  }
+
+  .company-detail p { font-size: 13px; }
+  .link-list a { font-size: 13px;}
+  .footer-top h5 { font-size: 16px; }
+  .footer-bottom .wrapper p { font-size: 13px; }
+  .footer-bottom { padding: 10px 0; }
+  .call-back { padding: 30px 0; }
+
+  .footer-contact-us { 
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; 
+  }
+
+  .Send-message-btn input {
+    padding: 10px;
+    font-size: 13px;
+  }
+} 
+/*****************320px media query end here************/
+
+ /* ==========================================================================
+   5. MEDIA QUERY END HERE
+========================================================================== */ 
